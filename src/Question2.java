@@ -11,6 +11,7 @@ public class Question2 {
         for(int index:indexes) {
             String[] currentLine = Viva.flights[index].split(",");
 
+            // Validation
             if (isDateValid(currentLine[0]) && isAirportValid(currentLine[6]) && isCityValid(currentLine[7])) {
                 filteredFlights.add(Arrays.toString(currentLine));
             }
